@@ -1,4 +1,4 @@
-@extends('layouts.view')
+@extends('layouts.dashboard')
 
 @push('title')
     <title>Index Dashboard</title>
@@ -21,7 +21,7 @@
                     <a href="{{ route('users.create') }}">Create User</a>
                 </li>
                 <li>
-                    <a href="#">View All Users</a>
+                    <a href="{{ route('user.view') }}">View All Users</a>
                 </li>
                 <li>
                     <a href="">Contact</a>

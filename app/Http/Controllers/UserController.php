@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Profile;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rules\Password;
 
@@ -57,6 +58,31 @@ class UserController extends Controller
         $user->phone_number = $request['phone_number'];
         $user->user_type = $request['user_type'];
         $user->save();
+
+        if($user->user_type != 1)
+        {
+            $profile = new Profile;
+            $profile->registration_number = $request['registration_number'];
+            $profile->user_id = $user->id;
+            $profile->save();
+        }
+
         return redirect()->route('index')->with('success', 'User Created Successfully');
+    }
+
+    public function view_student_dashboard()
+    {
+        return view('student_dashboard');
+    }
+
+    public function view_instructor_dashboard()
+    {
+        return view('instructor_dashboard');
+    }
+
+    public function view_all_users()
+    {
+        $users = User::all();
+        return view('users.view', compact('users'));
     }
 }
