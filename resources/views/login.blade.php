@@ -1,4 +1,4 @@
-@extends('layouts.form')
+@extends('layouts.loginform')
 
 @push('title')
     <title>Login</title>
@@ -22,9 +22,11 @@
                 <p class="text-danger">{{ $message }}</p>
             @enderror
         </div>
-        <button type="submit" class="btn btn-primary text-center">Submit</button>
         <div class="d-grid">
-            <p class="mt-3"><a href="#" class="text-danger link-underline-light">Forgot Password?</a></p>
+            <button type="submit" class="btn btn-dark text-center">Submit</button>
+        </div>  
+        <div class="d-grid">
+            <p class="mt-3"><a href="#" class="text-danger link-underline-light forgot-password">Forgot Password?</a></p>
         </div>  
     </form>
 @endsection

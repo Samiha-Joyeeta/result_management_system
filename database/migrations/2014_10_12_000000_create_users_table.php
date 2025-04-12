@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('phone_number', 15)->unique();
             $table->enum('user_type', ['1', '2', '3']); //1=Admin, 2=Instructor, 3=Student
-            $table->enum('status', ['0', '1']); //0=Inactive, 1=Active
+            $table->enum('status', ['1', '0']); //0=Inactive, 1=Active
             $table->timestamps();
         });
     }

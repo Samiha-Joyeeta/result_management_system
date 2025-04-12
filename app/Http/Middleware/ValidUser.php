@@ -18,13 +18,14 @@ class ValidUser
      */
     public function handle(Request $request, Closure $next, )
     {
-        $user = User::where('email', $request->email)->first();
+        
+            $user = User::where('email', $request->email)->first();
 
-        if ($user && $user->password === md5($request->password)) {
-            Auth::login($user);
-            return $next($request);
-        } else {
-            return redirect()->route('users.login');
-        }
+            if ($user && $user->password === md5($request->password)) {
+                Auth::login($user);
+                return $next($request);
+            } else {
+                return redirect()->route('users.login');
+            }
     }
 }

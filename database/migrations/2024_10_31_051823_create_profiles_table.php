@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profile', function (Blueprint $table) {
+        Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->constrained()->references('id')->on('users')->onDelete('cascade');
@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string('registration_number', 20)->unique();
             $table->unsignedBigInteger('department_id')->nullable();
             $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
+            $table->unsignedBigInteger('semester_id')->nullable();
+            $table->foreign('semester_id')->references('id')->on('semesters')->onDelete('cascade');
             $table->string('session')->nullable();
             $table->timestamps();
         });
@@ -35,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profile');
+        Schema::dropIfExists('profiles');
     }
 };

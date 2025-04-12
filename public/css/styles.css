@@ -1,3 +1,31 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: stretch;
+    background-color: #101010;
+}
+
+.navbar a, ul li a {
+    color: #ffffff;
+}
+
+.navbar p {
+    color: #ffffff;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.navbar .logout a {
+    color: #ffffff;
+    text-decoration-line: none;
+    padding-right: 25px;
+}
+
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -14,8 +42,6 @@ body {
     min-height: 100vh;
     padding-left: 20px
 }
-
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 .content p {
     font-family: 'Poppins', sans-serif;

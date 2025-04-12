@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.topbar {
+   position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+   
+}
+
+.side-bar{
+   position: fixed;
+   margin-top: 71px;
+   top: 0;
+   width: 250px;
+   background: hsla(0, 0%, 0%, 0.851);
+   height: 100%;
+   overflow-y: auto;
+   z-index: 1000;
+   transition: all 0.4s ease 0s;
+   padding-bottom: 50px;
+}
+
+.side-bar header {
+   position: relative;
+   font-size: 22px;
+   text-align: center;
+   color: white;
+   line-height: 70px;
+   background: hsla(360, 0%, 0%, 0.72);
+   user-select: none;
+}
+
+
+.side-bar ul a {
+   display: block;
+   height: 100%;
+   width: 100%;
+   line-height: 65px;
+   font-size: 15px;
+   color: white;
+   padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid white;
+   border-bottom: 1px solid #888888;
+   transition: .4s;
+   text-decoration: none;
+	}
+
+.navbar-logo {
+   cursor: pointer;
+   width: 2.5rem;
+   height: 2.5rem;
+   background-size: cover;
+}
+
+
+.push{
+   color: #FFFFFF;
+   }
+
+.web-header p {
+   font-size: 1rem;
+   color: white;
+}
+
+
+.profile-pic{
+   display: inline-block;
+   vertical-align: middle;
+   width: 30px;
+   height: 30px;
+   overflow: hidden;
+   border-radius: 50%;
+}
+
+.profile-pic img{
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+.profile-menu .dropdown-menu {
+right: 0;
+left: unset;
+}
+
+.profile-menu .fa-fw {
+   margin-right: 10px;
+}
+
+.toggle-change::after {
+   border-top: 0;
+   border-bottom: 0.3em solid;
+}
+
+.navbar-nav p {
+   color:white;
+   padding-right: 15px;
+}
+
+.navbar {
+   background-color: black;
+   height: 71px;
+}
+
+.navbar header {
+   margin-top: 15px;
+}
+
+.navbar .welcome-messages {
+   margin-top: 10px;
+}
+
+.content {
+   padding-top: 50px;
+   padding-left: 180px;
+   padding-right: 0px;
+   margin-top: 50px;
+}
+
+.dashboard-contents {
+   padding-top: 50px;
+   padding-left: 220px;
+}
+
+.link-button {
+   margin-left: 40px;
+   background: none;
+   border: none;
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+.link-button:hover {
+   color: whitesmoke;
+}
+
+.poppins-extralight {
+   font-family: "Poppins", sans-serif;
+   font-size: 0.5rem;
+ }
+
+ .text-danger {
+   font-size: 0.75rem; 
+}
+
+.table-content {
+   margin-top: 50px;
+   padding-left: 50px;
+   padding-right:20px
+}
+
+.table-content-admin {
+   padding-left: 50px;
+}
+
+.view {
+   padding: 80px;
+}
+
+.view-courses {
+   padding: 140px;
+}
+
+.forgot-password {
+   font-size: 1rem;
+}
+
+.exam-type {
+   display: legacy; 
+   width: 180px;
+}
+
+.password-note {
+   font-size: 0.85rem !important;
+}
+
+.close-button-style {
+   padding: 8px 16px;
+   margin-left: 13px;
+   margin-bottom: 10px;
+}
